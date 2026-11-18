@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h2>Royal Dashboard</h2>
+
+            <input
+                type="text"
+                placeholder="Cari Kelas, Dokumen, Aktifitas dll..."
+            >
+        </header>
+
+        <!-- BAGIAN DASHBOARD -->
+        <div class="dashboard-layout">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <nav>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#mahasiswa">Mahasiswa</a>
+                    <a href="#kelas">Kelas</a>
+                    <a href="#aktifitas">Aktifitas</a>
+                    <a href="#statistik">Statistik</a>
+                    <a href="#dokumen">Dokumen</a>
+                    <a href="#settings">Settings</a>
+                    <a href="#signout" class="signout">Sign Out</a>
+                </nav>
+
+            </aside>
+
+            <!-- KONTEN UTAMA -->
+            <main class="main-content">
+
+                <!-- SELAMAT DATANG -->
+                <section class="welcome-card" id="home">
+
+                    <div>
+                        <h1>Selamat Datang, <span id="nama-mahasiswa">Nama Mahasiswa</span></h1>
+
+                        <h2>Kelas <span id="nama-kelas">SI-3E</span></h2>
+
+                        <p>
+                            Kamu memiliki Statistik, 3 Progres Kelas,
+                            4 Aktifitas Selanjutnya dan 3 Lampiran
+                            Dokumen yang ada pada aplikasi ini.
+                        </p>
+                    </div>
+
+                    <div class="profile">
+                        <img src="foto saya.jpeg" alt="Foto Profil">
+                    </div>
+
+                </section>
+
+                <!-- KARTU STATISTIK DAN INFORMASI -->
+                <section class="content-grid">
+
+                    <!-- STATISTIK MAHASISWA -->
+                    <div class="card statistik" id="statistik">
+
+                        
+
+                        <img
+                            src="gambar_statistik"
+                            alt="Grafik Statistik Mahasiswa"
+                        >
+
+                    </div>
+
+                    <!-- PROGRES KELAS -->
+                    <div class="card progres" id="kelas">
+
+                        <h3>Progres Kelas</h3>
+
+                        <div class="info-box">
+                            <strong>Matakuliah A</strong>
+                            <p>78 Pendaftar</p>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>Matakuliah B</strong>
+                            <p>30 Pendaftar</p>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>Matakuliah C</strong>
+                            <p>40 Pendaftar</p>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>Matakuliah D</strong>
+                            <p>10 Pendaftar</p>
+                        </div>
+
+                    </div>
+
+                    <!-- AKTIFITAS SELANJUTNYA -->
+                    <div class="card aktifitas" id="aktifitas">
+
+                        <h3>Aktifitas Selanjutnya</h3>
+
+                        <div class="activity-box">
+                            <strong>Perkuliahan Daring 1</strong>
+                            <p>Senin, 15 Januari 2025</p>
+                        </div>
+
+                        <div class="activity-box">
+                            <strong>Perkuliahan Daring 1</strong>
+                            <p>Selasa, 15 Februari 2025</p>
+                        </div>
+
+                        <div class="activity-box">
+                            <strong>Perkuliahan Daring 1</strong>
+                            <p>Rabu, 15 Maret 2025</p>
+                        </div>
+
+                        <div class="activity-box">
+                            <strong>Perkuliahan Daring 1</strong>
+                            <p>Kamis, 15 April 2025</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- LAMPIRAN DOKUMEN -->
+                <section class="card documents" id="dokumen">
+
+                    <h3>Lampiran</h3>
+
+                    <div class="document-box">
+                        <span>
+                            Lampiran Dokumen 1 - Matakuliah A |
+                            Tugas Bersama Perkuliahan Daring
+                        </span>
+                        <a href="#">Lihat Dokumen</a>
+                    </div>
+
+                    <div class="document-box">
+                        <span>
+                            Lampiran Dokumen 2 - Matakuliah B |
+                            Tugas Bersama Perkuliahan Daring
+                        </span>
+                        <a href="#">Lihat Dokumen</a>
+                    </div>
+
+                    <div class="document-box">
+                        <span>
+                            Lampiran Dokumen 3 - Matakuliah C |
+                            Tugas Bersama Perkuliahan Daring
+                        </span>
+                        <a href="#">Lihat Dokumen</a>
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

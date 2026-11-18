@@ -1,0 +1,469 @@
+/* =========================================
+   RESET
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #292929;
+    color: #26384d;
+}
+
+/* =========================================
+   DASHBOARD
+========================================= */
+.dashboard-container {
+    width: 92%;
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 25px auto;
+    padding: 24px;
+    background: #eaf3ff;
+    border-radius: 14px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: #17436f;
+    font-size: 22px;
+}
+
+.header input {
+    width: 220px;
+    padding: 9px 12px;
+    border: 1px solid #b7c9dd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 10px;
+}
+
+/* =========================================
+   LAYOUT
+========================================= */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 12px;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+.sidebar {
+    background: #0755b2;
+    border-radius: 5px;
+    min-height: 540px;
+    padding-top: 35px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 16px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #164b7e;
+}
+
+.sidebar a.active {
+    background: #16416d;
+}
+
+.sidebar a.signout {
+    color: #ffc49b;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+.main-content {
+    min-width: 0;
+}
+
+/* =========================================
+   WELCOME CARD / MAHASISWA
+========================================= */
+.welcome-card {
+    background: #0755b2;
+    color: white;
+    padding: 18px 25px;
+    border-radius: 5px;
+    min-height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    transition: all 0.3s ease;
+}
+
+/* HIGHLIGHT MAHASISWA */
+.welcome-card.menu-highlight {
+    background-color: #ffd966;
+    color: #17436f;
+    outline: 2px solid #e6b93d;
+}
+
+.welcome-card h1 {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.welcome-card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.welcome-card p {
+    font-size: 10px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.profile {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    background: #8060ed;
+    margin-right: 35px;
+    flex-shrink: 0;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================
+   GRID CONTENT
+========================================= */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.65fr 0.8fr 1.2fr;
+    gap: 12px;
+    align-items: stretch;
+}
+
+/* =========================================
+   CARD
+========================================= */
+.card {
+    background: white;
+    border-radius: 6px;
+    padding: 14px;
+    box-shadow: 0 5px 15px rgba(20, 60, 100, 0.06);
+    transition: all 0.3s ease;
+}
+
+.card h3 {
+    font-size: 12px;
+    margin-bottom: 13px;
+    color: #26384d;
+}
+
+/* =========================================
+   STATISTIK
+========================================= */
+.statistik {
+    min-height: 235px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistik img {
+    width: 100%;
+    height: 100%;
+    min-height: 190px;
+    flex: 1;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+/* HIGHLIGHT STATISTIK */
+.statistik.menu-highlight {
+    background-color: #ffd966;
+    outline: 2px solid #e6b93d;
+}
+
+/* =========================================
+   PROGRES KELAS
+========================================= */
+.progres {
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.progres .info-box {
+    background: #eff6fe;
+    border-radius: 7px;
+    padding: 8px 9px;
+    margin: 0;
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-box strong {
+    font-size: 9px;
+}
+
+.info-box p {
+    color: #0755b2;
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+/* =========================================
+   AKTIVITAS SELANJUTNYA
+========================================= */
+.aktifitas {
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aktifitas .activity-box {
+    background: #eff6fe;
+    padding: 8px 10px;
+    border-radius: 7px;
+    margin: 0;
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activity-box strong {
+    font-size: 9px;
+    display: block;
+}
+
+.activity-box p {
+    color: #0755b2;
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+/* =========================================
+   DOKUMEN / LAMPIRAN
+========================================= */
+.documents {
+    margin-top: 13px;
+    transition: all 0.3s ease;
+}
+
+.documents h3 {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #26384d;
+}
+
+.document-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    background: #eff6fe;
+    padding: 15px 12px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    font-size: 9px;
+    color: #26384d;
+    transition: all 0.3s ease;
+}
+
+.document-box a {
+    display: inline-block;
+    color: #0755b2;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 5px;
+    text-align: center;
+}
+
+/* HIGHLIGHT SEMUA LAMPIRAN */
+.documents.menu-highlight .document-box {
+    background-color: #ffd966;
+    outline: 2px solid #e6b93d;
+}
+
+/* =========================================
+   HIGHLIGHT KELAS SI-3E
+========================================= */
+#nama-kelas {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#nama-kelas.highlight {
+    background-color: #ffd966;
+    color: #17436f;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* =========================================
+   HIGHLIGHT PROGRES DAN AKTIVITAS
+========================================= */
+.card.menu-highlight {
+    background-color: #ffd966;
+    outline: 2px solid #e6b93d;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+@media (max-width: 950px) {
+    .dashboard-container {
+        width: 96%;
+        padding: 15px;
+    }
+
+    .dashboard-layout {
+        grid-template-columns: 155px 1fr;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+
+    .statistik {
+        grid-column: 1 / -1;
+    }
+
+    .aktifitas {
+        grid-column: 1 / -1;
+    }
+
+    .progres,
+    .aktifitas {
+        min-height: 235px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+@media (max-width: 600px) {
+    body {
+        background: #eaf3ff;
+    }
+
+    .dashboard-container {
+        width: 100%;
+        margin: 0;
+        padding: 12px;
+        border-radius: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .header input {
+        width: 100%;
+    }
+
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        min-height: auto;
+        padding: 0;
+    }
+
+    .sidebar nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sidebar a {
+        padding: 12px 3px;
+        font-size: 10px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .statistik,
+    .aktifitas {
+        grid-column: auto;
+    }
+
+    .welcome-card {
+        padding: 16px;
+    }
+
+    .welcome-card h1 {
+        font-size: 17px;
+    }
+
+    .welcome-card h2 {
+        font-size: 15px;
+    }
+
+    .profile {
+        width: 48px;
+        height: 48px;
+        margin-right: 0;
+    }
+
+    .statistik img {
+        height: 210px;
+    }
+
+    .progres,
+    .aktifitas {
+        min-height: 235px;
+    }
+
+    .progres .info-box,
+    .aktifitas .activity-box {
+        min-height: 45px;
+    }
+
+    .document-box {
+        flex-wrap: wrap;
+    }
+}
